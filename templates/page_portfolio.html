@@ -1,0 +1,13 @@
+<div  id="demo" class="container gallery magicwall">
+    <ul class="magicwall-grid">
+    	{% for title, main_proj_img, As in project_greed %}
+       {{title}}
+       <li data-thumb="{{main_proj_img}}">
+       	<div class="hover-content vcenter"></div>
+       	{% for href, title in As %}
+       	<a href='{{href}}' title='<a href="{{title}}" target="_blank">{{title}}</a>' class='colorbox' rel='magicwall11'></a>
+       	{% endfor %}
+       </li>
+       {% endfor %}
+    </ul>
+ </div>

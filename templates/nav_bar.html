@@ -1,0 +1,45 @@
+<div id="nav_bar">
+   <a class="logo" rel="index" href="/">
+       <img src="/static/wp-content/themes/0x/img/logo.png" alt="{{logo_alt}}" /> 
+       <img src="/static/wp-content/themes/0x/img/logo_sub.png" alt="{{logo_alt}}" />
+   </a>
+   <nav class="en"> 
+   	<a rel="index" href="/" class="home-link{% if current_active_page == '/' %} active{% endif %}">
+   		<i class="icon-hom"></i>
+   	</a>
+   	<a rel="about" href="/about" class="{% if current_active_page == 'about' %} active{% endif %}">
+   		<i class="icon-prof"></i>
+   	</a> 
+   	<a rel="skills" href="/skills" class="{% if current_active_page == 'skills' %} active{% endif %}">
+   		<i class="icon-gear"></i>
+   	</a> 
+   	<a rel="gallery" href="/portfolio" class="{% if current_active_page == 'portfolio' %} active{% endif %}">
+   		<i class="icon-eye"></i>
+   	</a> 
+   	<a rel="contact" href="/contact" class="{% if current_active_page == 'contact' %} active{% endif %}">
+   		<i class="icon-mail"></i>
+   	</a>
+   </nav>
+   <ul>
+      <li>
+      	<a href="{{twitter_url}}" target="_blank">
+      		<i class="fa fa-twitter"></i></a>
+      </li>
+      <li>
+      	<a href="{{linkedin_url}}" target="_blank">
+      		<i class="fa fa-linkedin"></i>
+      	</a>
+      </li>
+      <li>
+      	<a href="{{facebook_url}}" target="_blank">
+      		<i class="fa fa-facebook"></i>
+      	</a>
+      </li>
+      <li>
+      	<a href="{{feed_url}}" target="_blank">
+      		<i class="fa fa-rss"></i>
+      	</a>
+      </li>
+   </ul>
+   <a id="mobile-link" href="#"><i class="fa fa-bars"></i></a>
+</div>

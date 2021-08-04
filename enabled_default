@@ -1,0 +1,24 @@
+server {
+	listen 443 ssl;
+	server_name 0x539.co;
+
+	location / {
+		include proxy_params;
+		proxy_pass http://unix:/home/Nico/FlaskPortfolio/FlaskPortfolio.sock;
+	}
+
+    ssl_certificate /etc/letsencrypt/live/0x539.co/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/0x539.co/privkey.pem; # managed by Certbot
+}
+server {
+    if ($host = 0x539.co) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+	listen 80;
+	server_name 0x539.co;
+    return 404; # managed by Certbot
+
+
+}

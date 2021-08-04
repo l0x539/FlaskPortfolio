@@ -1,0 +1,21 @@
+CREATE DATABASE portfolio;
+USE portfolio;
+
+CREATE TABLE `contacts`
+(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(100) NOT NULL,
+    `email` VARCHAR(100) NOT NULL,
+    `subject` VARCHAR(100) NOT NULL,
+    `message` VARCHAR(2000) NOT NULL,
+PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `project_greed`
+(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `title` VARCHAR(100) NOT NULL,
+    `main_data_pic` VARCHAR(500) NOT NULL,
+    `Ahrefs` VARCHAR(5000) NOT NULL,
+PRIMARY KEY (`id`)
+);

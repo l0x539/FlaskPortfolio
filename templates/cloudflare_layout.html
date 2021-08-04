@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Hytale laoding</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+    <style>
+.glow-particle {
+  transition: opacity 3s;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  z-index: 10; }
+  .glow-particle::after, .glow-particle::before {
+    position: absolute;
+    top: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%; }
+  .glow-particle::after {
+    border-radius: 0%; }
+  .glow-particle::before {
+    border-radius: 50%; }
+  .glow-particle--1::before {
+    box-shadow: 0 0 70px 35px rgba({{color_1}}, 0.4), 10px -20px 70px 35px rgba({{color_1}}, 0.2), 20px -40px 70px 35px rgba({{color_1}}, 0.2), 0 0 10px 5px rgba({{color_1}}, 0.8); }
+  .glow-particle--1::after {
+    background-color: {{hex_color_1}}; }
+  .glow-particle--2::before {
+    box-shadow: 0 0 10px 5px rgba({{color_1}}, 0.8); }
+  .glow-particle--2::after {
+    background-color: {{hex_color_2}}; }
+  .glow-particle--3::before {
+    box-shadow: 0 0 20px 10px rgba({{color_2}}, 0.5), 0 0 3px 4px rgba({{color_2}}, 0.5); }
+  .glow-particle--3::after {
+    background-color: {{hex_color_3}}; }
+  .glow-particle--4 {
+    opacity: 0.7;
+    background-color: {{hex_color_2}};
+    box-shadow: 0 0 160px 80px rgba({{color_1}}, 0.4), 0 0 5px 3px rgba({{color_3}}, 0.4);
+    filter: blur(3px); }
+    </style>
+
+</head>
+<body>
+
+
+<div class="bg">
+    <div class="glow-logo1" style="color: {{text_color}};text-align: center;padding-top: 30%;">
+    <img alt="hytale hub logo" src="https://cdn.discordapp.com/attachments/485428830060675120/532668484015095819/hytale11.png" style="height: 250px;margin-left: -1%;" class="animate-flicker myimg"/> ::IM_UNDER_ATTACK_BOX::<br>{{statment|safe}}
+    </div>
+</div>
+    <div class="d-none d-xl-block glow-particles">
+
+            <div class="position-absolute particle-raise" style="right:10%; animation-duration: 11.696525351690786s; animation-delay: -11s">
+                <div class="particle-swing" style="animation-duration: 3.9084995099316227s">
+                    <div class="particle-size-6 particle-pulse" style="animation-duration: 2.2401053958226558s;">
+                        <div class="glow-particle glow-particle--4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="left:5%; animation-duration: 65.82211279528711s; animation-delay: -11s">
+                <div class="particle-swing" style="animation-duration: 2.1404133770227314s">
+                    <div class="particle-size-1 particle-pulse" style="animation-duration: 1.3823530790720868s;">
+                        <div class="glow-particle glow-particle--2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="right:5%; animation-duration: 52.964310920357s; animation-delay: 3s">
+                <div class="particle-swing" style="animation-duration: 2.6652976973405007s">
+                    <div class="particle-size-2 particle-pulse" style="animation-duration: 1.7296847046478243s;">
+                        <div class="glow-particle glow-particle--1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="left:15%; animation-duration: 35.40424896264308s; animation-delay: 21s">
+                <div class="particle-swing" style="animation-duration: 3.3666924432131076s">
+                    <div class="particle-size-4 particle-pulse" style="animation-duration: 2.0669382680813877s;">
+                        <div class="glow-particle glow-particle--3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="right:12%; animation-duration: 62.101897350468406s; animation-delay: 11s">
+                <div class="particle-swing" style="animation-duration: 2.3542189344065703s">
+                    <div class="particle-size-1 particle-pulse" style="animation-duration: 1.6429707147036472s;">
+                        <div class="glow-particle glow-particle--4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="right:20%; animation-duration: 34.70106051269136s; animation-delay: 23s">
+                <div class="particle-swing" style="animation-duration: 3.2754796183258508s">
+                    <div class="particle-size-4 particle-pulse" style="animation-duration: 1.7283854928949507s;">
+                        <div class="glow-particle glow-particle--1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="right:9%; animation-duration: 35.157314786314615s; animation-delay: -5s">
+                <div class="particle-swing" style="animation-duration: 2.9748407193129385s">
+                    <div class="particle-size-4 particle-pulse" style="animation-duration: 1.6192812961119463s;">
+                        <div class="glow-particle glow-particle--4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="left:13%; animation-duration: 55.2890178410085s; animation-delay: 16s">
+                <div class="particle-swing" style="animation-duration: 2.902248174768844s">
+                    <div class="particle-size-2 particle-pulse" style="animation-duration: 1.8077090939619647s;">
+                        <div class="glow-particle glow-particle--1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="right:6%; animation-duration: 35.76670777851476s; animation-delay: 12s">
+                <div class="particle-swing" style="animation-duration: 3.087106677511824s">
+                    <div class="particle-size-4 particle-pulse" style="animation-duration: 1.9471621773570502s;">
+                        <div class="glow-particle glow-particle--1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="right:18%; animation-duration: 53.90773672836246s; animation-delay: -16s">
+                <div class="particle-swing" style="animation-duration: 3.1223030661993016s">
+                    <div class="particle-size-2 particle-pulse" style="animation-duration: 1.8607777111030497s;">
+                        <div class="glow-particle glow-particle--4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="left:15%; animation-duration: 10.928127303889603s; animation-delay: -14s">
+                <div class="particle-swing" style="animation-duration: 3.8321830826863303s">
+                    <div class="particle-size-6 particle-pulse" style="animation-duration: 2.181129229048714s;">
+                        <div class="glow-particle glow-particle--4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="right:12%; animation-duration: 23.709339452666626s; animation-delay: 17s">
+                <div class="particle-swing" style="animation-duration: 2.4373680077814206s">
+                    <div class="particle-size-5 particle-pulse" style="animation-duration: 1.273129573922604s;">
+                        <div class="glow-particle glow-particle--1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="right:7%; animation-duration: 10.467539922941967s; animation-delay: 12s">
+                <div class="particle-swing" style="animation-duration: 3.236811315674495s">
+                    <div class="particle-size-6 particle-pulse" style="animation-duration: 1.737016201911725s;">
+                        <div class="glow-particle glow-particle--2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="left:18%; animation-duration: 47.714548789987646s; animation-delay: -5s">
+                <div class="particle-swing" style="animation-duration: 3.3286276417709546s">
+                    <div class="particle-size-3 particle-pulse" style="animation-duration: 1.992771110371639s;">
+                        <div class="glow-particle glow-particle--1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="left:17%; animation-duration: 44.892216421757595s; animation-delay: 5s">
+                <div class="particle-swing" style="animation-duration: 2.240620734957461s">
+                    <div class="particle-size-3 particle-pulse" style="animation-duration: 1.3320513070165731s;">
+                        <div class="glow-particle glow-particle--3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="left:17%; animation-duration: 63.05524239843851s; animation-delay: -1s">
+                <div class="particle-swing" style="animation-duration: 2.7052832274022016s">
+                    <div class="particle-size-1 particle-pulse" style="animation-duration: 1.7465768688745498s;">
+                        <div class="glow-particle glow-particle--3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="right:10%; animation-duration: 32.37243861810993s; animation-delay: -9s">
+                <div class="particle-swing" style="animation-duration: 3.43871082045637s">
+                    <div class="particle-size-4 particle-pulse" style="animation-duration: 2.2613357155118887s;">
+                        <div class="glow-particle glow-particle--4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="left:20%; animation-duration: 35.5232505123902s; animation-delay: 19s">
+                <div class="particle-swing" style="animation-duration: 3.08723495576218s">
+                    <div class="particle-size-4 particle-pulse" style="animation-duration: 1.886012258293504s;">
+                        <div class="glow-particle glow-particle--2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="right:16%; animation-duration: 65.7285902900687s; animation-delay: 15s">
+                <div class="particle-swing" style="animation-duration: 3.3588591563972647s">
+                    <div class="particle-size-1 particle-pulse" style="animation-duration: 1.8047937933298905s;">
+                        <div class="glow-particle glow-particle--2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute particle-raise" style="right:13%; animation-duration: 11.631385537108299s; animation-delay: 20s">
+                <div class="particle-swing" style="animation-duration: 2.998773046064805s">
+                    <div class="particle-size-6 particle-pulse" style="animation-duration: 2.006343769039164s;">
+                        <div class="glow-particle glow-particle--1"></div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+</body>
+</html>

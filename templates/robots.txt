@@ -1,0 +1,10 @@
+User-agent: Googlebot
+Disallow: /static/
+
+User-agent: *
+Disallow: /static/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://0x539.co/sitemap.xml

@@ -1,0 +1,9 @@
+User-agent: Twitterbot
+Allow: /static/NiCO/NiCO.jpg 
+
+User-agent: *
+Disallow: /static/wp-content
+Disallow: /static/wp-includes
+Disallow: /static/wp-json
+
+Sitemap: https://0x539.co/sitemap.xml

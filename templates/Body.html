@@ -1,0 +1,46 @@
+<body class="{{body_class}}">
+	<script>
+if (sessionStorage.intro) {
+     jQuery('body').addClass('second');
+}
+     </script> 
+     {% include "nav_bar.html" %}
+      <div id="page" class="en">
+      	{% include current_page_template %}
+      </div>
+      <div id="vide" style="width: 100%; height: 100%; position:fixed;top:0;left:0;right:0;bottom:0;z-index:-1;opacity:0.02;"></div>
+      <div class="preloader">
+         <div class="inner">
+            <img src="/static/wp-content/themes/0x/img/logopreload.png"
+               alt="{{logo_alt}}"/> <span>Nourdin is thinking</span>
+            <div class="progress-bar">
+               <div class="progress-bar_bg">
+                  <div></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <a class="blog-link" href="https://twitter.com/l0x539"> <img src="/static/corner.png" alt="{{logo_alt}}" /> 
+      	<span class="folded-corner"></span> 
+      </a>
+      <div id="rotate"></div>
+      <script type='text/javascript' src='/static/wp-includes/js/wp-embed.minf1f8.js?ver=c47ab8dc2cefa6891edaef6e0d93839e'></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> 
+      <script src="/static/wp-content/themes/0x/js/plugins.js"></script> 
+      <script src="/static/wp-content/themes/0x/js/vendor/magicwall.js"></script> 
+      <script src="/static/wp-content/themes/0x/js/vendor/tagcanvas.js"></script> 
+      <script>var app = {};
+         app.ajax = null;
+      </script> 
+      <script src="/static/wp-content/themes/0x/js/app/app-home.js"></script> 
+      <script src="/static/wp-content/themes/0x/js/app/app-about.js"></script> 
+      <script src="/static/wp-content/themes/0x/js/app/app-contact.js"></script> 
+      <script src="/static/wp-content/themes/0x/js/app/app-gallery.js"></script> 
+      <script src="/static/wp-content/themes/0x/js/app/app-skills.js"></script> 
+      <script src="/static/wp-content/themes/0x/js/app/app-text.js"></script> <script src="/static/wp-content/themes/0x/js/main.js"></script>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% for message in messages %}
+            <script>{{message}}</script>
+        {% endfor %}
+    {% endwith %}
+</body>
